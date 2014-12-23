@@ -13,6 +13,7 @@
 		6D73EB5E1A49911100C77651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D73EB5C1A49911100C77651 /* Main.storyboard */; };
 		6D73EB601A49911100C77651 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D73EB5F1A49911100C77651 /* Images.xcassets */; };
 		6D73EB631A49911100C77651 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D73EB611A49911100C77651 /* LaunchScreen.xib */; };
+		6D73EB7A1A4992E200C77651 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73EB791A4992E200C77651 /* LanguageManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6D73EB5D1A49911100C77651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D73EB5F1A49911100C77651 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D73EB621A49911100C77651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6D73EB781A4992E200C77651 /* LanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
+		6D73EB791A4992E200C77651 /* LanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				6D73EB5F1A49911100C77651 /* Images.xcassets */,
 				6D73EB611A49911100C77651 /* LaunchScreen.xib */,
 				6D73EB521A49911100C77651 /* Supporting Files */,
+				6D73EB781A4992E200C77651 /* LanguageManager.h */,
+				6D73EB791A4992E200C77651 /* LanguageManager.m */,
 			);
 			path = ios_language_manager;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				6D73EB5B1A49911100C77651 /* ViewController.m in Sources */,
 				6D73EB581A49911100C77651 /* AppDelegate.m in Sources */,
 				6D73EB551A49911100C77651 /* main.m in Sources */,
+				6D73EB7A1A4992E200C77651 /* LanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
