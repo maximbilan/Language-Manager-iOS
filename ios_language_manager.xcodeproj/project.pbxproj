@@ -82,11 +82,8 @@
 				6D73EB571A49911100C77651 /* AppDelegate.m */,
 				6D73EB591A49911100C77651 /* ViewController.h */,
 				6D73EB5A1A49911100C77651 /* ViewController.m */,
-				6D73EB5C1A49911100C77651 /* Main.storyboard */,
-				6D73EB5F1A49911100C77651 /* Images.xcassets */,
-				6D73EB611A49911100C77651 /* LaunchScreen.xib */,
+				6D867C261A61659900E5512A /* Resources */,
 				6D73EB521A49911100C77651 /* Supporting Files */,
-				6D867C221A615D0B00E5512A /* Localizable.strings */,
 			);
 			path = ios_language_manager;
 			sourceTree = "<group>";
@@ -111,6 +108,17 @@
 				6D867C121A6148CD00E5512A /* NSBundle+Language.m */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		6D867C261A61659900E5512A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D867C221A615D0B00E5512A /* Localizable.strings */,
+				6D73EB5C1A49911100C77651 /* Main.storyboard */,
+				6D73EB5F1A49911100C77651 /* Images.xcassets */,
+				6D73EB611A49911100C77651 /* LaunchScreen.xib */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
