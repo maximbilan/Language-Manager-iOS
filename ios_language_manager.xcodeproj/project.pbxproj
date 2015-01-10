@@ -32,6 +32,8 @@
 		6D867C0F1A61488500E5512A /* LanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageManager.m; sourceTree = "<group>"; };
 		6D867C111A6148CD00E5512A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		6D867C121A6148CD00E5512A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		6D867C141A614B4000E5512A /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		6D867C151A614BE700E5512A /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		6D73EB521A49911100C77651 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D867C151A614BE700E5512A /* ios_language_manager.pch */,
 				6D73EB531A49911100C77651 /* Info.plist */,
 				6D73EB541A49911100C77651 /* main.m */,
 			);
@@ -89,6 +92,7 @@
 		6D867C0D1A61488500E5512A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6D867C141A614B4000E5512A /* Defines.h */,
 				6D867C0E1A61488500E5512A /* LanguageManager.h */,
 				6D867C0F1A61488500E5512A /* LanguageManager.m */,
 				6D867C111A6148CD00E5512A /* NSBundle+Language.h */,
