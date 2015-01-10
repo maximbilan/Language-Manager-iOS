@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, ELanguage)
+{
+    ELanguageEnglish,
+    ELanguageGerman,
+    ELanguageFrench,
+    
+    ELanguageCount
+};
+
 @interface LanguageManager : NSObject
+
++ (void)setupCurrentLanguage;
++ (NSArray *)languageStrings;
++ (NSString *)currentLanguageString;
++ (NSInteger)currentLanguageIndex;
++ (void)saveLanguageByIndex:(NSInteger)index;
 
 @end
