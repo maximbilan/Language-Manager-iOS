@@ -34,6 +34,12 @@
 		6D867C121A6148CD00E5512A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		6D867C141A614B4000E5512A /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		6D867C151A614BE700E5512A /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = SOURCE_ROOT; };
+		6D867C161A614EEB00E5512A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		6D867C171A614EEB00E5512A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6D867C181A614EEF00E5512A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		6D867C191A614EEF00E5512A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6D867C1B1A614EFA00E5512A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		6D867C1D1A614F0100E5512A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D73EB5D1A49911100C77651 /* Base */,
+				6D867C161A614EEB00E5512A /* fr */,
+				6D867C181A614EEF00E5512A /* de */,
+				6D867C1B1A614EFA00E5512A /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -194,6 +203,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				6D73EB621A49911100C77651 /* Base */,
+				6D867C171A614EEB00E5512A /* fr */,
+				6D867C191A614EEF00E5512A /* de */,
+				6D867C1D1A614F0100E5512A /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
