@@ -18,41 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azU-YO-RU1">
-                                <rect key="frame" x="16" y="559" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Ltt-3R-8e6"/>
-                                    <constraint firstAttribute="width" constant="42" id="vHo-PK-XEb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFF-hZ-afc">
-                                <rect key="frame" x="542" y="559" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="do8-jd-xpW"/>
-                                    <constraint firstAttribute="width" constant="42" id="oTn-DO-edS"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jY-fI-0eh">
-                                <rect key="frame" x="16" y="20" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="6ST-o0-uVT"/>
-                                    <constraint firstAttribute="height" constant="21" id="nSZ-s6-2cO"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="28" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merry Christmas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c12-u1-cTg">
-                                <rect key="frame" x="447" y="20" width="137" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Fjr-f5-3NZ"/>
-                                    <constraint firstAttribute="width" constant="137" id="a9O-3Q-dEA"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merry Christmas" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c12-u1-cTg">
+                                <rect key="frame" x="457" y="28" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,18 +46,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="EpY-9L-Dzm"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFF-hZ-afc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0XK-KJ-Kwv" secondAttribute="centerX" constant="-0.5" id="5VZ-C2-2SS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azU-YO-RU1" secondAttribute="bottom" constant="20" id="720-fJ-1hM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azU-YO-RU1" secondAttribute="bottom" constant="33" id="720-fJ-1hM"/>
                             <constraint firstItem="c12-u1-cTg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ETi-Hr-xnh"/>
-                            <constraint firstItem="c12-u1-cTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ga6-c2-YSx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BFF-hZ-afc" secondAttribute="bottom" constant="20" id="PA4-WV-9oa"/>
+                            <constraint firstItem="c12-u1-cTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ga6-c2-YSx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BFF-hZ-afc" secondAttribute="bottom" constant="33" id="PA4-WV-9oa"/>
                             <constraint firstAttribute="centerY" secondItem="0XK-KJ-Kwv" secondAttribute="centerY" id="ULc-bT-4ya"/>
                             <constraint firstItem="BFF-hZ-afc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WOo-P2-kdV"/>
                             <constraint firstItem="azU-YO-RU1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gJI-CW-2ci"/>
-                            <constraint firstItem="9jY-fI-0eh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="koo-ra-QyM"/>
+                            <constraint firstItem="9jY-fI-0eh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="koo-ra-QyM"/>
                             <constraint firstItem="9jY-fI-0eh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m28-2O-5TG"/>
                         </constraints>
                     </view>
