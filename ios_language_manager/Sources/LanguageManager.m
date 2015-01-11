@@ -51,6 +51,11 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
     return string;
 }
 
++ (NSString *)currentLanguageCode
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:LanguageSaveKey];
+}
+
 + (NSInteger)currentLanguageIndex
 {
     NSInteger index = 0;
