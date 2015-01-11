@@ -76,7 +76,7 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
 
 + (void)saveLanguageByIndex:(NSInteger)index
 {
-    if (index >=0 && index < ELanguageCount) {
+    if (index >= 0 && index < ELanguageCount) {
         NSString *code = LanguageCodes[index];
         [[NSUserDefaults standardUserDefaults] setObject:code forKey:LanguageSaveKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
