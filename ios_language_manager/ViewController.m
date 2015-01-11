@@ -16,6 +16,8 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *bottomLeftLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bottomRightLabel;
 
 @end
 
@@ -26,6 +28,9 @@
     [super viewDidLoad];
     
     data = [LanguageManager languageStrings];
+    
+    self.bottomLeftLabel.text = NSLocalizedString(@"Happy New Year", @"");
+    self.bottomRightLabel.text = @"ПТНПНХ";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

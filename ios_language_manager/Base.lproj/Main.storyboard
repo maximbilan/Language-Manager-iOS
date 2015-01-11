@@ -85,6 +85,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomLeftLabel" destination="azU-YO-RU1" id="B86-im-y4D"/>
+                        <outlet property="bottomRightLabel" destination="BFF-hZ-afc" id="6Xp-je-Oj6"/>
                         <outlet property="tableView" destination="0XK-KJ-Kwv" id="EeV-6K-b2F"/>
                     </connections>
                 </viewController>
