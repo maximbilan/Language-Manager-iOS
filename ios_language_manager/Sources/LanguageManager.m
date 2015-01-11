@@ -7,6 +7,7 @@
 //
 
 #import "LanguageManager.h"
+#import "NSBundle+Language.h"
 
 static NSString * const LanguageCodes[] = { @"en", @"de", @"fr"};
 static NSString * const LanguageStrings[] = {@"English", @"German", @"French"};
@@ -25,8 +26,12 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
     }
+#ifndef USE_ON_FLY_LOCALIZATION
     [[NSUserDefaults standardUserDefaults] setObject:@[currentLanguage] forKey:@"AppleLanguages"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+#else
+    [NSBundle setLanguage:currentLanguage];
+#endif
 }
 
 + (NSArray *)languageStrings
@@ -75,6 +80,9 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
         NSString *code = LanguageCodes[index];
         [[NSUserDefaults standardUserDefaults] setObject:code forKey:LanguageSaveKey];
         [[NSUserDefaults standardUserDefaults] synchronize];
+#ifdef USE_ON_FLY_LOCALIZATION
+        [NSBundle setLanguage:code];
+#endif
     }
 }
 

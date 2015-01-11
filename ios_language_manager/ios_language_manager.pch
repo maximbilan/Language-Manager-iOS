@@ -6,9 +6,4 @@
 //  Copyright (c) 2015 Maxim Bilan. All rights reserved.
 //
 
-#ifndef ios_language_manager_ios_language_manager_pch
-#define ios_language_manager_ios_language_manager_pch
-
 #import "Defines.h"
-
-#endif

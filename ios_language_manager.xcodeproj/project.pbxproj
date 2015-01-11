@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D14303F1A62FC51008D6DE9 /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = "<group>"; };
 		6D73EB4F1A49911100C77651 /* ios_language_manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_language_manager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D73EB531A49911100C77651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D73EB541A49911100C77651 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		6D867C111A6148CD00E5512A /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		6D867C121A6148CD00E5512A /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		6D867C141A614B4000E5512A /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
-		6D867C151A614BE700E5512A /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = SOURCE_ROOT; };
 		6D867C161A614EEB00E5512A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		6D867C171A614EEB00E5512A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6D867C181A614EEF00E5512A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		6D73EB521A49911100C77651 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D867C151A614BE700E5512A /* ios_language_manager.pch */,
+				6D14303F1A62FC51008D6DE9 /* ios_language_manager.pch */,
 				6D73EB531A49911100C77651 /* Info.plist */,
 				6D73EB541A49911100C77651 /* main.m */,
 			);
@@ -323,6 +323,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios_language_manager/ios_language_manager.pch;
 				INFOPLIST_FILE = ios_language_manager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,6 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios_language_manager/ios_language_manager.pch;
 				INFOPLIST_FILE = ios_language_manager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

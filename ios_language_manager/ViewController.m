@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LanguageManager.h"
+#import "AppDelegate.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 {
@@ -56,7 +57,17 @@
                                                                              message:@"Please, restart the application..."
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     [self presentViewController:alertController animated:YES completion:nil];
+#else
+    [self reloadRootViewController];
 #endif
+}
+
+- (void)reloadRootViewController
+{
+    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    NSString *storyboardName = @"Main";
+    UIStoryboard *storybaord = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    delegate.window.rootViewController = [storybaord instantiateInitialViewController];
 }
 
 @end

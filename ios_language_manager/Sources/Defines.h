@@ -6,4 +6,4 @@
 //  Copyright (c) 2015 Maxim Bilan. All rights reserved.
 //
 
-//#define USE_ON_FLY_LOCALIZATION
+#define USE_ON_FLY_LOCALIZATION
