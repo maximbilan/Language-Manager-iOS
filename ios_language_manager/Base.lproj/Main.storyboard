@@ -84,6 +84,9 @@
                             <constraint firstItem="9jY-fI-0eh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m28-2O-5TG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0XK-KJ-Kwv" id="EeV-6K-b2F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

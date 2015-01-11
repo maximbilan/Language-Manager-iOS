@@ -14,6 +14,8 @@
     NSArray *data;
 }
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation ViewController
@@ -36,12 +38,25 @@
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     cell.textLabel.text = data[indexPath.row];
+    if (indexPath.row == [LanguageManager currentLanguageIndex]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [LanguageManager saveLanguageByIndex:indexPath.row];
+    [self.tableView reloadData];
+#ifndef USE_ON_FLY_LOCALIZATION
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Attention"
+                                                                             message:@"Please, restart the application..."
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [self presentViewController:alertController animated:YES completion:nil];
+#endif
 }
 
 @end
