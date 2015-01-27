@@ -117,6 +117,6 @@ All code you can see on <a href="https://github.com/maximbilan/ios_language_mana
 
 Please, use for free and like it☺.
 
-Note: in example project by default the app uses method #2. You can disable this. Just comment define <b>USE_ON_FLY_LOCALIZATION</b>.
+<b>Note:</b> in example project by default the app uses method #2. You can disable this. Just comment define <b>USE_ON_FLY_LOCALIZATION</b>.
 
 More details in the blog: https://medium.com/@maximbilan/how-to-change-localization-internally-in-your-ios-application-9daf271433c7.
