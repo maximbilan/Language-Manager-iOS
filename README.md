@@ -23,7 +23,7 @@ For working this method, you’ll have to set it before <b>UIKit</b> initialized
 //  Copyright (c) 2014 Maxim Bilan. All rights reserved.
 //
 
-#import &#60;<&#62;UIKit/UIKit.h&#60;>&#62;
+#import &#60;UIKit/UIKit.h&#62;
 #import "AppDelegate.h"
 #import "LanguageManager.h"
 
