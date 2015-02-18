@@ -71,8 +71,8 @@
 {
     AppDelegate *delegate = [UIApplication sharedApplication].delegate;
     NSString *storyboardName = @"Main";
-    UIStoryboard *storybaord = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    delegate.window.rootViewController = [storybaord instantiateInitialViewController];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    delegate.window.rootViewController = [storyboard instantiateInitialViewController];
 }
 
 @end
