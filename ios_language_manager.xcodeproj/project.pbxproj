@@ -20,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		6D14303F1A62FC51008D6DE9 /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = "<group>"; };
+		6D499E941A98CAA1006D0410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		6D499E951A98CAA1006D0410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6D499E961A98CAA1006D0410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6D73EB4F1A49911100C77651 /* ios_language_manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_language_manager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D73EB531A49911100C77651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D73EB541A49911100C77651 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 				Base,
 				fr,
 				de,
+				ar,
 			);
 			mainGroup = 6D73EB461A49911100C77651;
 			productRefGroup = 6D73EB501A49911100C77651 /* Products */;
@@ -212,6 +216,7 @@
 				6D867C161A614EEB00E5512A /* fr */,
 				6D867C181A614EEF00E5512A /* de */,
 				6D867C1B1A614EFA00E5512A /* en */,
+				6D499E941A98CAA1006D0410 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				6D867C171A614EEB00E5512A /* fr */,
 				6D867C191A614EEF00E5512A /* de */,
 				6D867C1D1A614F0100E5512A /* en */,
+				6D499E951A98CAA1006D0410 /* ar */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				6D867C231A615D0C00E5512A /* en */,
 				6D867C241A615D0D00E5512A /* fr */,
 				6D867C251A615D0E00E5512A /* de */,
+				6D499E961A98CAA1006D0410 /* ar */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
