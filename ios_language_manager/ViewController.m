@@ -55,7 +55,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	BOOL isPreviousLanguageRTL = [LanguageManager isCurrentLanguageRTL];
     [LanguageManager saveLanguageByIndex:indexPath.row];
+	BOOL isCurrentLanguageRTL = [LanguageManager isCurrentLanguageRTL];
+	
     [self.tableView reloadData];
 #ifndef USE_ON_FLY_LOCALIZATION
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Attention"
@@ -63,6 +66,15 @@
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     [self presentViewController:alertController animated:YES completion:nil];
 #else
+	if (isPreviousLanguageRTL != isCurrentLanguageRTL) {
+		UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Attention"
+																				 message:@"Please, restart the application for applying right-to-left user interface or vice versa"
+																		  preferredStyle:UIAlertControllerStyleAlert];
+		UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:nil];
+		[alertController addAction:alertAction];
+		[self presentViewController:alertController animated:YES completion:nil];
+	}
+	
     [self reloadRootViewController];
 #endif
 }

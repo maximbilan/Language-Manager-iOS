@@ -94,4 +94,10 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
     }
 }
 
++ (BOOL)isCurrentLanguageRTL
+{
+	NSInteger currentLanguageIndex = [self currentLanguageIndex];
+	return LanguageRightToLeft[currentLanguageIndex];
+}
+
 @end
