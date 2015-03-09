@@ -9,9 +9,9 @@
 #import "LanguageManager.h"
 #import "NSBundle+Language.h"
 
-static NSString * const LanguageCodes[] = { @"en", @"de", @"fr", @"ar"};
-static NSString * const LanguageStrings[] = {@"English", @"German", @"French", @"Arabic"};
-static BOOL const LanguageRightToLeft[] = {NO, NO, NO, YES};
+static NSString * const LanguageCodes[] = { @"en", @"de", @"fr", @"ar" };
+static NSString * const LanguageStrings[] = { @"English", @"German", @"French", @"Arabic" };
+static BOOL const LanguageRightToLeft[] = { NO, NO, NO, YES };
 static NSString * const LanguageSaveKey = @"currentLanguageKey";
 
 @implementation LanguageManager

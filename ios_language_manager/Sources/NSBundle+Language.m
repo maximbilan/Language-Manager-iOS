@@ -38,7 +38,7 @@ static const char kBundleKey = 0;
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        object_setClass([NSBundle mainBundle],[BundleEx class]);
+        object_setClass([NSBundle mainBundle], [BundleEx class]);
     });
     id value = language ? [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]] : nil;
     objc_setAssociatedObject([NSBundle mainBundle], &kBundleKey, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
