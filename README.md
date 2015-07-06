@@ -3,7 +3,7 @@ How to change localization internally in your iOS application
 
 Unfortunately, there’s no official way provided by Apple for this purpose. Let’s look at two methods for solve this problem.
 
-<b>Method #1</b>
+## Method #1
 
 Apple provides a way to specify application specific language, by updating the <i>“AppleLanguages”</i> key in <b>NSUserDefaults</b>. For example:
 
@@ -39,7 +39,7 @@ int main(int argc, char * argv[]) {
 
 The problem of this method is that the app has to be relaunched to take effect.
 
-<b>Method #2</b>
+## Method #2
 
 The solution is to swap the <b>mainBundle</b> of our application as soon as user changes their language preferences inside the app.
 
