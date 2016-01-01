@@ -54,16 +54,25 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5W-4y-id6">
+                                <rect key="frame" x="217" y="153" width="167" height="30"/>
+                                <state key="normal" title="UIImagePickerController"/>
+                                <connections>
+                                    <action selector="imagePickerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Hs-V6-tGD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="0XK-KJ-Kwv" secondAttribute="centerX" constant="-0.5" id="5VZ-C2-2SS"/>
+                            <constraint firstItem="0XK-KJ-Kwv" firstAttribute="top" secondItem="k5W-4y-id6" secondAttribute="bottom" constant="17" id="6MO-KS-f1Y"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="azU-YO-RU1" secondAttribute="bottom" constant="33" id="720-fJ-1hM"/>
                             <constraint firstItem="c12-u1-cTg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ETi-Hr-xnh"/>
                             <constraint firstItem="c12-u1-cTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ga6-c2-YSx"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BFF-hZ-afc" secondAttribute="bottom" constant="33" id="PA4-WV-9oa"/>
                             <constraint firstAttribute="centerY" secondItem="0XK-KJ-Kwv" secondAttribute="centerY" id="ULc-bT-4ya"/>
                             <constraint firstItem="BFF-hZ-afc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WOo-P2-kdV"/>
+                            <constraint firstItem="k5W-4y-id6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fNm-XG-hOC"/>
                             <constraint firstItem="azU-YO-RU1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gJI-CW-2ci"/>
                             <constraint firstItem="9jY-fI-0eh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="koo-ra-QyM"/>
                             <constraint firstItem="9jY-fI-0eh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m28-2O-5TG"/>
@@ -72,6 +81,7 @@
                     <connections>
                         <outlet property="bottomLeftLabel" destination="azU-YO-RU1" id="B86-im-y4D"/>
                         <outlet property="bottomRightLabel" destination="BFF-hZ-afc" id="6Xp-je-Oj6"/>
+                        <outlet property="imagePickerButton" destination="k5W-4y-id6" id="jcb-qQ-hTl"/>
                         <outlet property="tableView" destination="0XK-KJ-Kwv" id="EeV-6K-b2F"/>
                     </connections>
                 </viewController>

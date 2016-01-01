@@ -10,7 +10,7 @@
 #import "LanguageManager.h"
 #import "AppDelegate.h"
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     NSArray *data;
 }
@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *bottomLeftLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bottomRightLabel;
+@property (weak, nonatomic) IBOutlet UIButton *imagePickerButton;
+
+@property (nonatomic) UIImagePickerController *imagePickerController;
 
 @end
 
@@ -85,6 +88,30 @@
     NSString *storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     delegate.window.rootViewController = [storyboard instantiateInitialViewController];
+}
+
+#pragma mark - UIImagePickerController
+
+- (IBAction)imagePickerButton:(UIButton *)sender
+{
+	UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+	imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
+	imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+	imagePickerController.delegate = self;
+	
+	self.imagePickerController = imagePickerController;
+	[self presentViewController:self.imagePickerController animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+	[self dismissViewControllerAnimated:YES completion:NULL];
+	self.imagePickerController = nil;
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
