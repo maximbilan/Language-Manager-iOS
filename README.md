@@ -111,7 +111,7 @@ In this method a problem that may arise is updating elements on active screens. 
 }
 </pre>
 
-All code you can see on <a href="https://github.com/maximbilan/ios_language_manager">github</a>. With simple example.
+All code you can see in this repository. With simple example.
 
 ![alt tag](https://raw.github.com/maximbilan/ios_language_manager/master/img/1.png)
 
