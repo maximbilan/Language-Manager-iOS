@@ -11,7 +11,6 @@
 
 static NSString * const LanguageCodes[] = { @"en", @"de", @"fr", @"ar" };
 static NSString * const LanguageStrings[] = { @"English", @"German", @"French", @"Arabic" };
-static BOOL const LanguageRightToLeft[] = { NO, NO, NO, YES };
 static NSString * const LanguageSaveKey = @"currentLanguageKey";
 
 @implementation LanguageManager
@@ -26,14 +25,7 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
             [[NSUserDefaults standardUserDefaults] setObject:currentLanguage forKey:LanguageSaveKey];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
-    }
-	
-	NSInteger currentLanguageIndex = [self currentLanguageIndex];
-	
-	[[NSUserDefaults standardUserDefaults] setBool:LanguageRightToLeft[currentLanguageIndex] forKey:@"AppleTextDirection"];
-	[[NSUserDefaults standardUserDefaults] setBool:LanguageRightToLeft[currentLanguageIndex] forKey:@"NSForceRightToLeftWritingDirection"];
-	[[NSUserDefaults standardUserDefaults] synchronize];
-	
+    }	
 #ifndef USE_ON_FLY_LOCALIZATION
     [[NSUserDefaults standardUserDefaults] setObject:@[currentLanguage] forKey:@"AppleLanguages"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -97,7 +89,7 @@ static NSString * const LanguageSaveKey = @"currentLanguageKey";
 + (BOOL)isCurrentLanguageRTL
 {
 	NSInteger currentLanguageIndex = [self currentLanguageIndex];
-	return LanguageRightToLeft[currentLanguageIndex];
+	return ([NSLocale characterDirectionForLanguage:LanguageCodes[currentLanguageIndex]] == NSLocaleLanguageDirectionRightToLeft);
 }
 
 @end
