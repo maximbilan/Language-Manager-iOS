@@ -117,6 +117,6 @@ All code you can see in this repository. With simple example.
 
 Please, use for free and like it ☺.
 
-<b>Note:</b> In example project by default the app uses method #2. You can disable this. Just comment define <b>USE_ON_FLY_LOCALIZATION</b>.
+<b>Note:</b> In example project by default the app uses <i>method #2</i>. You can disable this. Just comment define <b>USE_ON_FLY_LOCALIZATION</b>.
 
 More details in the blog <a href="http://www.factorialcomplexity.com/blog/2015/01/28/how-to-change-localization-internally-in-your-ios-application.html">here</a>.
