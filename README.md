@@ -5,7 +5,7 @@ Unfortunately, there’s no official way provided by <i>Apple</i> for this purpo
 
 ## Method #1
 
-Apple provides a way to specify application specific language, by updating the <i>“AppleLanguages”</i> key in <b>NSUserDefaults</b>. For example:
+<i>Apple</i> provides a way to specify application specific language, by updating the <i>“AppleLanguages”</i> key in <b>NSUserDefaults</b>. For example:
 
 <pre>
 [[NSUserDefaults standardUserDefaults] setObject:@"fr" forKey:@"AppleLanguages"];
