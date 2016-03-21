@@ -1,7 +1,7 @@
 How to change localization internally in your iOS application
 ============
 
-Unfortunately, there’s no official way provided by Apple for this purpose. Let’s look at two methods for solve this problem.
+Unfortunately, there’s no official way provided by <i>Apple</i> for this purpose. Let’s look at two methods for solve this problem.
 
 ## Method #1
 
