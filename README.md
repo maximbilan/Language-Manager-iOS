@@ -61,7 +61,7 @@ Implementation:
 
 <pre>
 #import "NSBundle+Language.h"
-#import <objc/runtime.h>
+#import &#60;objc/runtime.h&#62;
 
 static const char kBundleKey = 0;
 
