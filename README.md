@@ -48,7 +48,7 @@ See the category for <b>NSBundle</b>.
 Header:
 
 <pre>
-#import <Foundation/Foundation.h>
+#import &#60;Foundation/Foundation.h&#62;
 
 @interface NSBundle (Language)
 
