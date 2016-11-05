@@ -66,7 +66,7 @@
 
 - (void)reloadRootViewController
 {
-    AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     NSString *storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     delegate.window.rootViewController = [storyboard instantiateInitialViewController];
