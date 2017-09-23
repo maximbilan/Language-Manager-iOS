@@ -1,11 +1,11 @@
 How to change localization internally in your iOS application
 ============
 
-Unfortunately, there’s no official way provided by <i>Apple</i> for this purpose. Let’s look at two methods for solve this problem.
+Unfortunately, there’s no official way provided by <i>Apple</i> for this purpose. Let’s look at two methods for solving this problem.
 
 ## Method #1
 
-<i>Apple</i> provides a way to specify application specific language, by updating the <i>“AppleLanguages”</i> key in <b>NSUserDefaults</b>. For example:
+<i>Apple</i> provides a way to specify an application-specific language, by updating the <i>“AppleLanguages”</i> key in <b>NSUserDefaults</b>. For example:
 
 <pre>
 [[NSUserDefaults standardUserDefaults] setObject:@"fr" forKey:@"AppleLanguages"];
@@ -41,7 +41,7 @@ The problem of this method is that the app has to be relaunched to take effect.
 
 ## Method #2
 
-The solution is to swap the <b>mainBundle</b> of our application as soon as user changes their language preferences inside the app.
+The solution is to swap the <b>mainBundle</b> of our application as soon as the user changes their language preferences inside the app.
 
 See the category for <b>NSBundle</b>.
 
@@ -99,7 +99,7 @@ static const char kBundleKey = 0;
 @end
 </pre>
 
-In this method a problem that may arise is updating elements on active screens. You can reload your <b>rootViewController</b> from our application delegate, will always work reliably.
+In this method, a problem that may arise is updating elements on active screens. You can reload your <b>rootViewController</b> from our application delegate, will always work reliably.
 
 <pre>
 - (void)reloadRootViewController
@@ -119,4 +119,4 @@ Please, use for free and like it ☺.
 
 <b>Note:</b> In example project by default the app uses <i>method #2</i>. You can disable this. Just comment define <b>USE_ON_FLY_LOCALIZATION</b>.
 
-More details in the blog <a href="http://www.factorialcomplexity.com/blog/2015/01/28/how-to-change-localization-internally-in-your-ios-application.html">here</a>.
+More details on the blog <a href="http://www.factorialcomplexity.com/blog/2015/01/28/how-to-change-localization-internally-in-your-ios-application.html">here</a>.
