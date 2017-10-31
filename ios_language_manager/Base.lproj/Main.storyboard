@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merry Christmas" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c12-u1-cTg">
-                                <rect key="frame" x="231.5" y="28" width="127.5" height="20.5"/>
+                                <rect key="frame" x="232" y="28" width="127" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -47,6 +48,41 @@
                                     <constraint firstAttribute="width" constant="259" id="aTF-Tb-fIM"/>
                                     <constraint firstAttribute="height" constant="200" id="qAV-1u-q2r"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="languageCell" id="JWL-ez-7JX" customClass="LanguageTableViewCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="259" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JWL-ez-7JX" id="s7X-T6-HMb">
+                                            <rect key="frame" x="0.0" y="0.0" width="259" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-KT-euz">
+                                                    <rect key="frame" x="15" y="12" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="S1q-1G-sT6">
+                                                    <rect key="frame" x="166" y="0.0" width="78" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="S1q-1G-sT6" secondAttribute="height" multiplier="39:22" id="L5d-lU-Yk1"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="S1q-1G-sT6" secondAttribute="trailing" constant="15" id="Ph2-cD-pva"/>
+                                                <constraint firstItem="F9x-KT-euz" firstAttribute="leading" secondItem="s7X-T6-HMb" secondAttribute="leading" constant="15" id="SZg-Tc-wfR"/>
+                                                <constraint firstAttribute="bottom" secondItem="S1q-1G-sT6" secondAttribute="bottom" id="dka-Dq-XQ7"/>
+                                                <constraint firstItem="F9x-KT-euz" firstAttribute="centerY" secondItem="s7X-T6-HMb" secondAttribute="centerY" id="qdu-eD-kKg"/>
+                                                <constraint firstItem="S1q-1G-sT6" firstAttribute="top" secondItem="s7X-T6-HMb" secondAttribute="top" id="vHJ-1q-sOj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="languageNameLabel" destination="F9x-KT-euz" id="GXv-tZ-k47"/>
+                                            <outlet property="tickImage" destination="S1q-1G-sT6" id="4BY-DY-tOl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Rph-lK-Emk"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="EpY-9L-Dzm"/>
@@ -91,6 +127,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="33.733133433283363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tick" width="100" height="100"/>
+    </resources>
 </document>

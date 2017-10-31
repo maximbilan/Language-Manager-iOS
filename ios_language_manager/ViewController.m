@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LanguageManager.h"
+#import "LanguageTableViewCell.h"
 #import "AppDelegate.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
@@ -34,6 +35,11 @@
     
     self.bottomLeftLabel.text = NSLocalizedString(@"Happy New Year", @"");
     self.bottomRightLabel.text = @"ПТНПНХ";
+    
+    self.tableView.backgroundView = [UIView new];
+    self.tableView.backgroundView.backgroundColor = [UIColor whiteColor];
+    [self.tableView setSeparatorColor:[UIColor clearColor]];
+    [self.tableView setAlwaysBounceVertical:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -43,16 +49,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"cellIdentifier";
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = data[indexPath.row];
-    if (indexPath.row == [LanguageManager currentLanguageIndex]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    static NSString *cellIdentifier = @"languageCell";
+    LanguageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    [cell setLanguageName:data[indexPath.row] andIsSelected:indexPath.row == [LanguageManager currentLanguageIndex]];
     return cell;
 }
 
@@ -60,7 +59,6 @@
 {
     [LanguageManager saveLanguageByIndex:indexPath.row];
 
-    [self.tableView reloadData];
     [self reloadRootViewController];
 }
 
