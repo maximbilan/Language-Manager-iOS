@@ -44,12 +44,13 @@ static const char kBundleKey = 0;
     });
     if ([LanguageManager isCurrentLanguageRTL]) {
         if ([[[UIView alloc] init] respondsToSelector:@selector(setSemanticContentAttribute:)]) {
-            [[UIView appearance] setSemanticContentAttribute:
-             UISemanticContentAttributeForceRightToLeft];
+            [[UIView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceRightToLeft];
+            [[UITableView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceRightToLeft];
         }
     }else {
         if ([[[UIView alloc] init] respondsToSelector:@selector(setSemanticContentAttribute:)]) {
             [[UIView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceLeftToRight];
+            [[UITableView appearance] setSemanticContentAttribute:UISemanticContentAttributeForceLeftToRight];
         }
     }
     [[NSUserDefaults standardUserDefaults] setBool:[LanguageManager isCurrentLanguageRTL] forKey:@"AppleTextDirection"];

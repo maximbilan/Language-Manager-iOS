@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41B364CF1FA8893D007F77D8 /* LanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B364CE1FA8893D007F77D8 /* LanguageTableViewCell.m */; };
 		6D73EB551A49911100C77651 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73EB541A49911100C77651 /* main.m */; };
 		6D73EB581A49911100C77651 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73EB571A49911100C77651 /* AppDelegate.m */; };
 		6D73EB5B1A49911100C77651 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D73EB5A1A49911100C77651 /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41B364CD1FA8893D007F77D8 /* LanguageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageTableViewCell.h; sourceTree = "<group>"; };
+		41B364CE1FA8893D007F77D8 /* LanguageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageTableViewCell.m; sourceTree = "<group>"; };
 		6D14303F1A62FC51008D6DE9 /* ios_language_manager.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_language_manager.pch; sourceTree = "<group>"; };
 		6D499E941A98CAA1006D0410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		6D499E951A98CAA1006D0410 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				6D73EB5A1A49911100C77651 /* ViewController.m */,
 				6D867C261A61659900E5512A /* Resources */,
 				6D73EB521A49911100C77651 /* Supporting Files */,
+				41B364CD1FA8893D007F77D8 /* LanguageTableViewCell.h */,
+				41B364CE1FA8893D007F77D8 /* LanguageTableViewCell.m */,
 			);
 			path = ios_language_manager;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D73EB5B1A49911100C77651 /* ViewController.m in Sources */,
+				41B364CF1FA8893D007F77D8 /* LanguageTableViewCell.m in Sources */,
 				6D867C131A6148CD00E5512A /* NSBundle+Language.m in Sources */,
 				6D73EB581A49911100C77651 /* AppDelegate.m in Sources */,
 				6D73EB551A49911100C77651 /* main.m in Sources */,
