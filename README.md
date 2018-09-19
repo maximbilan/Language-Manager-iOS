@@ -15,14 +15,6 @@ Unfortunately, there’s no official way provided by <i>Apple</i> for this purpo
 For working this method, you’ll have to set it before <b>UIKit</b> initialized.
 
 <pre>
-//
-//  main.m
-//  ios_language_manager
-//
-//  Created by Maxim Bilan on 12/23/14.
-//  Copyright (c) 2014 Maxim Bilan. All rights reserved.
-//
-
 #import &#60;UIKit/UIKit.h&#62;
 #import "AppDelegate.h"
 #import "LanguageManager.h"
